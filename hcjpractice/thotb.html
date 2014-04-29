@@ -2,6 +2,7 @@
 
 <head>
 <title>巴斯克韦尔庄园的猎犬</title>
+<link href='http://fonts.googleapis.com/css?family=Pinyon+Script'  rel='stylesheet' type='text/css'>
 <style>
 * {
 	margin: 0;
@@ -13,27 +14,27 @@ body {
 	margin: 29px 10% 0;
 	background-image: url(hcj_texture2.png);
 }
-<link href='http://fonts.googleapis.com/css?family=Pinyon+Script'  rel='stylesheet' type='text/css'>
- h1 {
- font-size:60px;
-line-height:96px;
- font-family:"Pinyon Script", cursive;
- margin:4px 0 -4px;
- text-align:center;
- font-weight:normal;
- position:relative;
+h1 {
+	position: relative;
+	margin: 4px 0 -4px;
+	font-weight: normal;
+	font-size: 60px;
+	font-family: 'Pinyon Script', 'cursive';
+	text-align: center;
+	text-shadow: 4px 4px 4px #aaa;
+	line-height: 96px;
 }
-h1 + p::first-letter { 
-    font-family:times, serif;  
-    font-size:90px;  
-    float:left;  
-    line-height:.65;
-    padding:.1em 3px 0 0; 
-} 
-h1 + p::first-line { 
-    font-variant:small-caps;  
-    letter-spacing:.15em; 
-} 
+h1 + p::first-letter {
+	font-family: times, serif;
+	font-size: 90px;
+	float: left;
+	line-height: .65;
+	padding: .1em 3px 0 0;
+}
+h1 + p::first-line {
+	font-variant: small-caps;
+	letter-spacing: .15em;
+}
 h2 {
 	font-size: 18px;
 	line-height: 24px;
@@ -46,18 +47,29 @@ h2 {
 p {
 	font-size: 18px;
 	line-height: 24px;
-	margin-top:9px;
-	margin-bottom:-9px;
-	
+	margin-top: 9px;
+	margin-bottom: -9px;
 }
-blockquote {margin:9px 20% -9px;} 
-q {font-size:18px; font-style:italic; line-height:24px;} 
+blockquote {
+	margin: 9px 20% -9px;
+}
+q {
+	font-size: 18px;
+	font-style: italic;
+	line-height: 24px;
+}
 /*只缩进跟在段落后面的段落*/ 
-p + p {text-indent:14px;} 
+p + p {
+	text-indent: 14px;
+}
 /*引用内容前面的引号*/ 
-q::before {content:"\201C"} 
+q::before {
+	content: "\201C"
+}
 /*引用内容后面的引号*/ 
-q::after {content:"\201D"} 
+q::after {
+	content: "\201D"
+}
 </style>
 </head>
 
