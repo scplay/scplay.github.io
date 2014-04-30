@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>三级下拉菜单</title>
+<style>
+.multi_drop_menu {font:1em helvetica, arial, sans-serif;}
+.multi_drop_menu a {display:block; /*􏽅􏹵􏲾􏲿*/
+color:#555;
+/**/ background-color:#eee; /**/ padding:.2em 1em; /**/ border-width:3px; /*边界宽度和透明*/ border-color:transparent;
+}
+.multi_drop_menu a:hover {
+/*悬停时的颜色*/ color:#fff; /**/ background-color:#aaa;
+}
+.multi_drop_menu a:active {
+/*点击时候的颜色*/ background:#fff; /**/ color:#ccc;
+}
+
+.multi_drop_menu * {margin:0; padding:0;}
+.multi_drop_menu ul {float:left;}
+.multi_drop_menu li {
+/*􏲢􏲣􏲤􏽉􏲐􏲑􏽋*/ float:left; /*􏱷􏱸􏿴􏿵􏱽􏽋􏵓􏽌􏺨*/ list-style-type:none; /*􏲭􏰉􏲐􏲑􏳊􏳝􏲆􏰇􏿷􏱚􏽅*/ position:relative;
+}
+.multi_drop_menu li a {
+/**/ display:block;/*􏲒􏱤􏱒􏾚􏾛􏰕􏰖􏲏􏱒􏲋􏱿􏲓*/ 1 border-right-style:solid;
+/*􏲃􏲄􏺝􏰆􏳋􏺡􏱾􏱿􏲀􏿪􏳌􏺣􏵅*/
+background-clip:padding-box;
+/*􏱷􏱸􏾚􏾛􏱽􏱚􏶐􏰙*/
+    text-decoration:none;
+}
+.multi_drop_menu li:last-child a {border-right-style:none;} /*􏳍􏿯􏳎􏼷􏳏􏻻􏲐􏲑*/
+.multi_drop_menu li ul {display:none;}
+
+/* 􏰕􏰖􏱽􏲻􏲼􏺁􏲛 */ /*􏲶􏻻􏲐􏲑􏲉􏳩*/
+.multi_drop_menu li ul {width:9em;} .multi_drop_menu li li a {
+/*􏱷􏱸􏻳􏳛􏱽􏲋􏱿􏲓*/ border-right-style:none; /*􏰕􏰖􏿷􏱿􏲓*/ border-top-style:solid;
+}
+/* 􏰕􏰖􏱽􏳉􏱧􏺁􏲛 */ .multi_drop_menu li ul {
+	/*􏳍􏿯􏳜􏴱􏲶􏻻􏱚􏰄􏲐􏲑*/  display:block;
+/*􏳝􏰂􏲯􏼆􏲐􏲑􏽋􏲆􏰇*/
+position:absolute;
+/*􏲊􏱿􏰊􏼆􏲐􏲑􏽋􏰂􏰃*/ left:0; /*􏳞􏱿􏰊􏼆􏲐􏲑􏽋􏳟􏱿􏰂􏰃*/ top:100%;
+}
+.multi_drop_menu li li { /*􏲜􏳠􏿼􏿽􏲌􏳡􏳢􏳣􏳤*/ float:none;
+}
+.multi_drop_menu li li ul {
+/*􏻳􏳥􏳎􏼷􏿝􏻻􏱚􏰄􏲐􏲑*/
+
+￼￼display:none; }
+
+
+.multi_drop_menu li ul { /*􏳎􏼷􏲶􏻻􏱚􏰄􏲐􏲑*/ display:none;
+position:absolute; /*􏲊􏱿􏰊􏼆􏲐􏲑􏽋􏰂􏰃*/ left:0; /*􏳞􏱿􏰊􏼆􏲐􏲑􏽋􏳟􏱿􏰂􏰃*/ top:100%;
+}
+.multi_drop_menu li:hover > ul {
+/*􏼆􏱻􏱼􏻊􏲜􏿯􏳜􏴱*/
+    display:block;
+}
+
+</style>
+
+</head>
+
+<body>
+<nav class="multi_drop_menu"> <!-- 1 -->
+<ul>
+<li><a href="#">Power</a></li>
+<li><a href="#">Money</a></li>
+<li><a href="#">Love</a></li>
+<li><a href="#">Fame</a>
+<!-- 2 --> <ul>
+        <li><a href="#">Sports Star</a></li>
+        <li><a href="#">Movie Star</a></li>
+        <li><a href="#">Rock Star</a>
+<!-- 3 -->
+<ul>
+￼￼<li><a href="#">Bruce Springsteen</a></li>
+<li><a href="#">Bono</a></li>
+<li><a href="#">Mick Jagger</a></li>
+<li><a href="#">Bob Dylan</a></li> 
+￼</ul>
+<!-- 1 --> </li>
+                <li><a href="#">Web Designer</a></li>
+            </ul>
+<!-- 2 --> </li>
+</ul>
+<!-- 3 --> </nav>
+</body>
+</html>
