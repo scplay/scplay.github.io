@@ -4,51 +4,58 @@
 <meta charset="UTF-8">
 <title>搜索栏CSS3动画</title>
 <style>
-
-          
-           
-          
-
-* {margin:0; padding:0;}
-header { /*􏺡􏽁􏱒􏲏􏰉􏿥􏵻􏽊􏿛􏿜*/
-           font-family:helvetica, arial, sans-serif;
-           display:block;
-           overflow:hidden;
-           width:500px;
-           margin:30px;
-           border-radius:6px;
-           background-color:#ddd;
+* {
+	margin: 0;
+	padding: 0;
 }
-form.stylin_form_search1 { /*􏿞􏵋 label 􏲁 input 􏱽􏺦􏱦*/
-           float:right;
-           width:200px;
-           margin:5px; padding:5px;
-       }
-       form.stylin_form_search1 input {
-           float:right;width:70px;padding:2px 0 3px 5px;
-outline:none; /*􏱷􏱸􏿴􏿵􏱽􏸖􏳜􏵞􏵟􏰙*/
-font-size:.8em; border-color:#eee #ccc #ccc #eee; /*􏴺􏰂􏵩􏷟􏷧􏷨􏱦􏱽􏷠􏷡􏺧􏷢*/
-￼    border-radius:10px; -webkit-transition:2s width;
+header { /*代表页眉*/
+	font-family: helvetica, arial, sans-serif;
+	display: block;
+	overflow: hidden;
+	width: 500px;
+	margin: 30px;
+	border-radius: 6px;
+	background-color: #ddd;
+	/*我让它在最右边*/
+	float: right;
 }
-
-form.stylin_form_search1 input:focus {width:200px;}
+form.stylin_form_search1 { /*包含 label 和 input 容器*/
+	float: right;
+	width: 200px;
+	margin: 5px;
+	padding: 5px;
+}
+form.stylin_form_search1 input {
+	float: right;
+	width: 70px;
+	padding: 2px 0 3px 5px;
+	outline: none; /*去掉默认的轮廓线，没用啊？*/
+	font-size: 0.8em;
+	border-color: #eee #ccc #ccc #eee; /*没有倒圆角啊？*/
+	border-radius: 10px;/*为什么radius一定要放到transition的下面？*/
+	-webkit-transition:1.6s width ease-in-out 200ms;
+	-moz-transition:1.6s width ease-in-out 200ms;
+}
+form.stylin_form_search1 input:focus {
+	width: 200px;
+}
+form.stylin_form_search1 label {
+	display: none;/*我看标注压根没显示*/
+}
 form.stylin_form_search1 label {display:none;}
-		   </style>
- </head>
- 
-<body>
+/*颜色这个不对*/
+input {border-color:black;background-color: #eee; transition:border-color 2s ease-in 500ms;transition:background-color 2s rainbow 500ms;}
+input:focus {border-color:green;background-color:#9F6;}
+</style>
+</head>
 
-       
-           <form class="stylin_form_search1" action="#" method="post">
-             <label for="search">search</label>
-               <input type="search" id="search" name="search"
+<body>
+<header>
+  <form class="stylin_form_search1" action="#" method="post">
+    <label for="search">search</label>
+    <input type="search" id="search" name="search"
               placeholder="search"  />
-           </form>
-       </header>
-       
-       
-       
-       
-       
+  </form>
+</header>
 </body>
 </html>
