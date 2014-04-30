@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>横向菜单列表</title>
+<style>
+nav {border:1px solid black;
+margin:0 5%;}
+div {max-width:960px;margin:0 9%;}
+.list1 ul {
+	overflow: hidden;
+}
+
+/*处理中英文不一样*/
+li.en {
+	font-size:1.1em;}
+	
+.list1 li {
+	float: left; 
+	list-style-type: none;
+}
+.list1 li:last-child {display:inline;
+	width:100px;}
+.list1 a {
+	display: block;
+	padding: 0 16px; 
+	text-decoration: none;
+	color: #999;
+}
+.list1 li + li a {
+	border-left: 1px solid #aaa;
+}
+.list1 a:hover {
+	color: #555;
+}
+#info h1,p{	text-align:center;}
+/*margin上下无效啊？*/
+span {margin:-10px 0;font-size:1.1em;font-style:italic;}
+</style>
+</head>
+
+<body>
+<nav class="list1">
+<div>
+  <ul>
+    <li class="en"><a href="biowang.html">Bio.Xeon</a></li>
+    <li><a href="traditype.html">笔记本排版</a></li>
+    <li><a href="thotb.html">巴庄园的猎犬</a></li>
+    <li><a href="tablecol.html"><span>Table</span>分栏</a></li>
+    <li><a href="divcol.html">内部Div分栏</a></li>
+    <li><a href="boxsize.html">Box-sizing分栏</a></li>
+    <li><a href="colmenu.html">纵向菜单</a></li>
+    <li><a href="rowmenu.html">横向菜单</a></li>
+  </ul>
+</nav>
+</div>
+<section id="info">
+<H1>
+这个就是一般网页的导航栏咯
+</H1>
+<p>为什么第一个看起啦么的奇怪，无法调整,已经可以调整了果然是因为中英文不一样高。。</p>
+</section>
+</body>
+</html>
