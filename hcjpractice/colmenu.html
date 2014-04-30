@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>菜单栏练习纵向菜单</title>
+<style>
+* {margin:0; padding:0;}
+nav {margin:50px; width:300px;}
+.list1 ol {border:1px solid #0aa; border-radius:5px;
+           padding:5px 10px 3px;background:#efe;}
+		   .list1 li {list-style-type:none; }
+		   /*子选择符 非首位 代表任意跟在li之后的li*/
+		   .list1 li + li {border-top:1px solid #0ba;}
+		   .list1 a {display:block; padding:3px 10px;text-decoration:none; font:20px Exo, helvetica,
+               arial, sans-serif; font-weight:400; color:#00f;
+background:#eee;}
+.list1 a:hover {color:#C9F;}
+</style>
+
+</head>
+
+<body>
+   <nav class="list1">
+           <ol>
+               <li><a href="hcjpractice/biowang.html">Bio.Xeon</a></li>
+               <div></div>
+              <li><a href="hcjpractice/traditype.html">笔记本样式排版</a></li>
+              <li><a href="hcjpractice/thotb.html">巴斯克韦尔庄园的猎犬</a></li>
+              <div></div>
+              <li><a href="hcjpractice/tablecol.html">CSS3 Table分栏</a></li>
+              <li><a href="hcjpractice/divcol.html">用内部Div分栏</a></li>
+              <div></div>
+              <li><a href="hcjpractice/boxsize.html">用Box-sizing分栏</a></li>
+              <div></div>
+              <li><a href="hcjpractice/colmenu.html">菜单栏练习纵向菜单</a></li>
+</ol> </nav>
+</body>
+</html>
