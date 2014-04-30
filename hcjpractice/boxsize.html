@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Box-sizing分栏</title>
@@ -7,7 +7,9 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing:border-box
 }
+
 #wrapper {
 	width: 960px;
 	margin: 0 auto;
@@ -46,6 +48,11 @@ footer {clear:both; background:#0ee;}
 </head>
 
 <body>
+<!-- HTML 􏽑􏾵 -->
+<!-- 􏺝􏾶 IE8 􏾷􏺧􏱽 IE 􏰖􏾸􏾹 -->
+<!--[if lt IE 8 ]>
+<script src="helpers/borderBoxModel.js"></script>
+<![endif]-->
 <div id="wrapper">
   <header> AAAAAAAAAAA </header>
   <nav>
@@ -61,7 +68,7 @@ footer {clear:both; background:#0ee;}
       <li>BBBBBB</li>
     </ul>
   </nav>
-  <article> CCCCCCCC </article>
+  <article> CCCCCCCC DWCS6不支持BOX-SIZING你忙吧 </article>
   <aside> DDDDDDDD </aside>
   <footer> EEEEEEEEEEEE</footer>
 </div>
