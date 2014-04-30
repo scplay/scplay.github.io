@@ -1,17 +1,52 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>CSS3 Tabel分栏</title>
+<style>
+* {
+	margin:0;
+	padding:0;
+}
+header {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 36px;
+}
+nav {
+	display: table-cell;
+	width: 180px;
+	padding: 1px;
+	background: #dcd9c0;
+}
+ol {margin:0;padding:0 15%;}
+article {
+	display: table-cell;
+	
+	padding: 10px 20px;
+	background: #ffed53;
+}
+aside {
+	display: table-cell;
+	width: 210px;
+	padding: 10px;
+	background: #3f7ccf;
+}
+￼￼footer {
+	background: #ffed53;
+}
+</style>
 </head>
 
 <body>
 <header>三栏练习中栏流动排版 </header>
 <nav>
   <ol>
-    <li>第一个链接</li>
+    <li><a href="scplay.github.io/ppt/gerde.pptx" title="下载课件">Germany Design</a></li>
     <li>第二个链接</li>
     <li>第三个链接</li>
+    <li><a href="#">Bruce Springsteen</a></li>
+    <li><a href="#">Bono</a></li>
+    <li><a href="#">Mick Jagger</a></li>
+    <li><a href="#">Bob Dylan</a></li>
   </ol>
 </nav>
 <article>
@@ -20,15 +55,13 @@
   <h1>中栏第二个标题</h1>
   <p>这是中栏里面的段落</p>
 </article>
-
 <aside>
-<h2>
-这就是个边栏
-</h2>
-<p>标签总是要有意义的</p>
+  <h2> 这就是个边栏 </h2>
+  <p>标签总是要有意义的</p>
 </aside>
-
 <footer>
-
+  <p>底下还是要blabla的写点什么</p>
+  <p>A CSS template from <a href="http://www.stylinwithcss.com"><em> Stylin' with CSS, Third Edition</em></a> by Charles Wyke-Smith</p>
+</footer>
 </body>
 </html>
