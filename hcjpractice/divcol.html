@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Div分栏</title>
+<style>
+body {
+	font-family: Verdana, Geneva, sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	border: 1px solid;
+}
+article {
+	background: #ffed53;
+}
+nav {
+	width: 150px;
+	float: left;
+	background: #dcd9c0;
+	padding: 10px 20px;
+}
+nav li {
+	list-style-type: none;
+}
+nav .inner {padding:10px;}
+aside .inner {padding:10px;}
+footer {text-align:center}
+article {
+	width: 540px;
+	float: left;
+	padding: 10px 10px;
+	background: #ffed53;
+}
+article .inner {
+	margin: 10px;
+	border: 2px solid red;
+	padding: 10px 20px;
+}
+aside {
+	width: 210px;
+	float: left;
+	background: #3f7ccf;
+}
+header {
+	background: #f00;
+}
+footer {
+	background: #eee;
+	clear: both
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+  <header> 这是标题</header>
+  <nav>
+  <div class="inner">
+    <ul>
+      <li> float起来就没有边框咯</li>
+      <li> 左边的序列号被藏起来了</li>
+      <li> hhhhhhhh</li>
+      <li> 要修改<code> nav </code>的padding</li>
+      <li> hhhhhhhh</li>
+      <li> hhhhhhhh</li>
+      <li> hhhhhhhh</li>
+      <li> hhhhhhhh</li>
+      <li> hhhhhhhh</li>
+    </ul>
+    </div>
+  </nav>
+  <article>
+    <div class="inner"> 
+      <! -- 包含了一些元素 -->
+      <p>哔哔哔hehehehehehehe哔哔哔hehehehehehehe哔哔哔hehehehehehehe哔哔哔hehehehehehehe哔哔哔hes hehehehehehe哔哔哔hehehehehehehe哔哔哔hehehehehehehe哔哔哔hehehehehehehe哔哔哔hehehehehehehe哔哔哔hehehehehehehe哔哔哔hehehehehehehe哔哔哔hehehehehehehe</p>
+    </div>
+  </article>
+  <aside> 
+  <div class="inner">
+    <!---->
+    <p>边上的文本要不要黑泽明都</p>
+  </aside>
+  <footer> 这是页脚</footer>
+  </div>
+</div>
+</body>
+</html>

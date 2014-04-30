@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Box-sizing分栏</title>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	border: 1px solid #000;
+	overflow: hidden;
+}
+header {
+	background: #f00;
+}
+nav {
+	box-sizing: border-box;
+	width: 150px;
+	float: left;
+	background: #dcd9c0;
+	padding: 10px 10px;
+}
+nav li {
+	list-style-type: none;
+}
+article {
+	box-sizing: border-box;
+	width: 600px;
+	float: left;
+	background: #ffed53;
+	padding: 10px 10px;
+}
+aside {
+    box-sizing:border-box;
+    width:210px;
+    float:left;
+    background:#3f7ccf;
+    padding:10px 10px;
+}
+footer {clear:both; background:#0ee;}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+  <header> AAAAAAAAAAA </header>
+  <nav>
+    <ul>
+      <li>BBBBBB</li>
+      <li>BBBBBB</li>
+      <li>BBBBBB</li>
+      <li>BBBBBB</li>
+      <li>BBBBBB</li>
+      <li>BBBBBB</li>
+      <li>BBBBBB</li>
+      <li>BBBBBB</li>
+      <li>BBBBBB</li>
+    </ul>
+  </nav>
+  <article> CCCCCCCC </article>
+  <aside> DDDDDDDD </aside>
+  <footer> EEEEEEEEEEEE</footer>
+</div>
+</body>
+</html>
