@@ -136,17 +136,20 @@ nav.menu li:hover > ul {
 	opacity: 1;
 	visibility: visible; /*􏱺􏲩􏱧􏱨􏶏􏹥􏶐􏶑􏵹􏵺􏹙􏵻*/
 }
-nav.menu li li {
+.choice2 li:nth-child(2) a {
 	float: none; /*不浮动啊对呀？*/
+	border-bottom-left-radius: 0px;
 }
-.choice2 {
-	margin-top: 0;
+nav.menu li li:nth-child(3) a {
+	float: none; /*不浮动啊对呀？*/
+	border-bottom-left-radius: 0px;
 }
 nav.menu li li:first-child a {
 	border-radius: 0;
 }
 nav.menu li li:last-child a {
 	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 .no-csstransitions nav.menu li ul { /*针对不支持的浏览器*/
 	visibility: visible; /*覆盖过度声明*/
@@ -391,14 +394,14 @@ section#book_area {/*􏺧􏷊􏺗􏱩􏷸*/
 }
 /*偏移量*/
 #book_area article.right:last-child h3 {
-	left: 85%;
+	left: 25%;
 }
 #book_area article img {
 	box-shadow: 0 12px 8px -9px #555;
-	height: 120px;
+	
 }/*􏱠􏴄􏱙􏱶*/
 #book_area article aside { /*􏸀􏳧􏸁􏷛􏷜􏷴􏻘􏳬􏳭*/
-	display: none; /*􏸣􏸤􏸀􏳧􏸁*/
+	display: none; /**/
 	position: absolute; /*􏸥􏳔􏸦􏲱􏲲􏷵􏷶􏲴􏸭􏺦 div*/
 	z-index: 2;
 	width: 200px; /*􏸀􏳧􏸁􏷸􏷹*/
@@ -412,9 +415,9 @@ section#book_area {/*􏺧􏷊􏺗􏱩􏷸*/
 	font-size: .8em;
 	line-height: 1.5em;
 }
-￼#book_area article:hover aside {
+#book_area article:hover aside {
 	display: block;
-}/*􏸮􏳝􏸯􏸰􏸦􏱠􏴄􏸱􏳏􏳦􏸀􏳧􏸁*/
+}/**/
 #book_area article aside li {
 	￼padding: .25em 0 .75em 1em; /*􏹹􏲮􏹸􏲴􏼑􏴛􏷻􏷼􏲳􏹛􏷽􏷼*/
 	list-style-type: none; /*􏳊􏳋􏳌􏳍􏲴􏹸􏷗􏰣􏻉*/
@@ -440,7 +443,7 @@ section#book_area {/*􏺧􏷊􏺗􏱩􏷸*/
 	content: ""; /*􏻢􏳡􏻌􏸭􏲵􏳢􏲨􏲤􏳟􏻦􏲩􏷉􏹪􏰣􏲥*/
 	position: absolute; /*􏸥􏳔􏸦􏸀􏳧􏸁􏸃􏸄*/
 	top: 33px;
-	￼￼￼border: 12px solid;
+	border: 12px solid;
 	height: 0px;
 	width: 0px; /*􏲦􏹜􏷽􏷾􏲧􏲨􏱝􏻚􏺴*/
 }
@@ -619,7 +622,7 @@ maxlength="20" />
       <div class="inner">
         <h3>HTML5 + CSS3</h3>
         <!-- 要旋转的文字 --> 
-        <img src="images/stylin_cover.png" alt="Stylin' with CSS cover" />
+        <img src="http://static.acfun.com/dotnet/artemis/u/cms/www/201405/01122235vbmo.jpg" alt="Stylin' with CSS cover" />
         <aside> <!-- ..要隐藏吗 没有隐藏啊 -->
           <ol>
             <li><a href="#">Download the Code</a></li>
