@@ -378,8 +378,10 @@ section#book_area {/*􏺧􏷊􏺗􏱩􏷸*/
 	width: 160px;
 	left: 112%;
 	bottom: 5px; /*􏸩􏸆􏹪􏸃􏸄􏲧􏷵􏱟􏸫􏸬*/
-	transform: rotate(-90deg); /*􏱡􏱸􏸆􏹪􏻢􏳡􏻏􏳥􏵿􏳙􏳚􏳛􏳜􏲴􏱧􏱨*/
-	transform-origin: left bottom; /*􏺤􏸃􏱡􏱸􏲬􏾆􏵈􏳢􏻢􏳡􏵿􏳙􏳚􏳛􏳜􏲴􏱧􏱨*/
+	transform: rotate(-90deg); /*这个要带厂商前缀？*/
+	transform-origin: left bottom; /*同上*/
+	-webkit-transform: rotate(-90deg); /*这个要带厂商前缀？*/
+	-webkit-transform-origin: left bottom; /*同上*/
 	color: #ccc;
 	font-size: 1.4em;
 	font-family: Lato, helvetica, sans-serif;
@@ -387,13 +389,133 @@ section#book_area {/*􏺧􏷊􏺗􏱩􏷸*/
 	font-weight: 900;
 	text-align: left;
 }
-/*􏷌􏷍􏲴􏱠􏴄􏻢􏳡􏳤􏱩􏲴􏷎􏷏􏽶*/
+/*偏移量*/
 #book_area article.right:last-child h3 {
 	left: 85%;
 }
 #book_area article img {
 	box-shadow: 0 12px 8px -9px #555;
+	height: 120px;
 }/*􏱠􏴄􏱙􏱶*/
+#book_area article aside { /*􏸀􏳧􏸁􏷛􏷜􏷴􏻘􏳬􏳭*/
+	display: none; /*􏸣􏸤􏸀􏳧􏸁*/
+	position: absolute; /*􏸥􏳔􏸦􏲱􏲲􏷵􏷶􏲴􏸭􏺦 div*/
+	z-index: 2;
+	width: 200px; /*􏸀􏳧􏸁􏷸􏷹*/
+	background: #fff;
+	padding: 10px 2px 5px; /*􏸀􏳧􏸁􏸭􏲵􏷽􏷼*/
+	border: 2px solid #f58c21;
+	border-radius: 10px 0px 10px 0px;
+	box-shadow: 4px 4px 16px #555;
+	color: #555;
+	font-family: "Source Sans Pro", helvetica, sans-serif;
+	font-size: .8em;
+	line-height: 1.5em;
+}
+￼#book_area article:hover aside {
+	display: block;
+}/*􏸮􏳝􏸯􏸰􏸦􏱠􏴄􏸱􏳏􏳦􏸀􏳧􏸁*/
+#book_area article aside li {
+	￼padding: .25em 0 .75em 1em; /*􏹹􏲮􏹸􏲴􏼑􏴛􏷻􏷼􏲳􏹛􏷽􏷼*/
+	list-style-type: none; /*􏳊􏳋􏳌􏳍􏲴􏹸􏷗􏰣􏻉*/
+	line-height: 1.2em;
+}
+#book_area article aside li a { /*􏰤􏰥􏸆􏳵*/
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #616161;
+}
+￼#book_area article aside li a:hover { /*􏸯􏸰􏸱􏳎􏳏􏰤􏰥*/
+	color: #333;
+} /*􏸀􏳧􏸁􏷛􏷜􏷴􏻘􏽾􏱣*/
+#book_area article.left aside {/*􏹛􏸬􏱺􏳵􏱟*/
+	left: 84%;
+	top: 14px; /* 􏸩􏸀􏳧􏸁􏸃􏸄􏲧􏷵􏷶􏸫􏸬*/
+}
+#book_area article.right aside {/*􏸫􏸬􏱺􏳵􏱟*/
+	right: 84%;
+	top: 14px;/*􏸩􏸀􏳧􏸁􏸃􏸄􏲧􏷵􏷶􏹛􏸬*/
+}
+#book_area article aside:after { /*􏷝􏺹􏱝􏻚􏺴*/
+	content: ""; /*􏻢􏳡􏻌􏸭􏲵􏳢􏲨􏲤􏳟􏻦􏲩􏷉􏹪􏰣􏲥*/
+	position: absolute; /*􏸥􏳔􏸦􏸀􏳧􏸁􏸃􏸄*/
+	top: 33px;
+	￼￼￼border: 12px solid;
+	height: 0px;
+	width: 0px; /*􏲦􏹜􏷽􏷾􏲧􏲨􏱝􏻚􏺴*/
+}
+#book_area article.left aside:after { /*􏹛􏸬􏷵􏱟􏸀􏳧􏸁􏲴􏱝􏻚􏺴􏸃􏸄􏷜􏴕􏺹*/
+	right: 100%;
+	￼border-color: transparent #f58c21 transparent transparent;
+}
+#book_area article.right aside:after { /*􏸫􏸬􏷵􏱟􏸀􏳧􏸁􏲴􏱝􏻚􏺴􏸃􏸄􏷜􏴕􏺹*/
+	left: 100%;
+	border-color: transparent transparent transparent #f58c21;
+}
+#book_area article aside:before { /*􏸌􏺹􏱝􏻚􏺴*/
+	content: ""; /*􏻢􏳡􏻌􏸭􏲵􏳢􏲨􏲤􏳟􏻦􏲩􏷉􏹪􏰣􏲥*/
+	position: absolute; /*􏸥􏳔􏸦􏸀􏳧􏸁􏸃􏸄*/
+	border: 8px solid;
+	height: 0px;
+	width: 0px; /*􏲦􏹜􏷽􏷾􏲧􏲨􏱝􏻚􏺴*/
+	z-index: 100; /*􏹤􏰸􏸌􏺹􏱝􏻚􏺴􏲧􏻤􏳛􏴄*/
+	top: 37px;
+}
+#book_area article.left aside:before { /*􏹛􏸬􏷵􏱟􏸌􏺹􏱝􏻚􏺴􏲴􏷴􏻘􏺭􏸄􏰢􏲳􏴕􏺹*/
+	right: 100%;
+	border-color: transparent white transparent transparent;
+}
+#book_area article.right aside:before { /*􏸫􏸬􏷵􏱟􏸌􏺹􏱝􏻚􏺴􏲴􏷴􏻘􏺭􏸄􏰢􏲳􏴕􏺹*/
+	left: 100%;
+	border-color: transparent transparent transparent white;
+}
+footer {
+	padding: .5em 0 .35em 0; /*􏸭􏲵􏸅􏷥􏲴􏷻􏷼*/
+	text-align: center; /*􏺶􏲬􏸭􏲵*/
+	border-radius: 10px 0px 10px 0px;
+	background: #fff;
+	box-shadow: 0 12px 8px -9px #555;
+}
+footer p { /*􏸆􏳵􏹾􏲴􏷴􏻘*/
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+	font-size: .85em;
+	letter-spacing: -.05em;
+	color: #555;
+}
+footer p a { /*􏸆􏳵􏹾􏲬􏲴􏰤􏰥*/
+	font-family: 'Source Sans Pro';
+	font-style: italic;
+	font-weight: 700;
+	font-size: 1em;
+	color: #4eb8ea;
+	text-decoration: none;
+}
+footer p a:hover {
+	color: #777;
+}
+footer ul { /*􏰤􏰥􏹹􏲮*/
+	display: inline-block; /*􏲦􏹜􏲱􏺢􏹹􏲮*/
+	margin: 4px 0 0;
+}
+footer li {
+	list-style-type: none; /*􏳊􏳋􏳌􏳍􏲴􏹸􏷗􏰣􏻉*/
+	float: left; /*􏸇􏹹􏲮􏹸􏵊􏵋􏸉􏹹*/
+	font-family: "Source Sans Pro";
+	font-weight: 400;
+	font-size: .85em;
+}
+footerli+lia {
+	border-left: 1px solid #ccc; /*􏰤􏰥􏵄􏵅􏳒*/
+}
+footer li a {
+1 text-decoration:none; /*􏳊􏳋􏰤􏰥􏳌􏳍􏲴􏷥􏴽􏳒*/
+	color: #aaa;
+	padding: 0 5px; /*􏰤􏰥􏷻􏷼*/
+}
+footer a:hover {
+	color: #777;
+}
 </style>
 </head>
 
@@ -498,7 +620,7 @@ maxlength="20" />
         <h3>HTML5 + CSS3</h3>
         <!-- 要旋转的文字 --> 
         <img src="images/stylin_cover.png" alt="Stylin' with CSS cover" />
-        <aside> <!-- 􏸀􏳧􏸁 -->
+        <aside> <!-- ..要隐藏吗 没有隐藏啊 -->
           <ol>
             <li><a href="#">Download the Code</a></li>
             <li><a href="#">Table of Contents</a></li>
@@ -508,9 +630,16 @@ maxlength="20" />
       </div>
     </article>
     <!-- 另外三本书也一样 --> </section>
-  <footer><!-- 一级 --> 
-    <!--  nav 页脚文本和nav --> 
-  </footer>
+  <footer>
+    <p>A CSS template from <a href="http://www.stylinwithcss.com"><em>Stylin'
+      ￼with CSS, Third Edition</em></a> by xEOn Wang-SV</p>
+    <nav>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Contact Charles</a></li>
+      </ul>
+    </nav>
+    ￼</footer>
 </div>
 <!-- wrapper 结束 -->
 </body>
