@@ -68,11 +68,14 @@ form.search input {
 form.search input::-webkit-input-placeholder {
 color:#ccc;
 }/*调整placeholder颜色要这么写*/
+
+/*  tiiiiiiiiiiiiiiiiiiiiiiiii*/
+
 nav.menu {
 	margin: 19px auto;
 	padding: 0;
-	text-align: center; /*容器中居中菜单*/
 	font-size: .8em;
+	text-align: center; /*容器中居中菜单*/
 }
 nav.menu > ul {
 	display: inline-block;
@@ -126,7 +129,7 @@ nav.menu li ul {
 	visibility: hidden; /* 隐藏下拉菜单*/
 	position: absolute; /*相对于福菜单定位*/
 	width: 12em; /*下拉菜单宽度*/
-	left: -50%; /*位置出错了XXXXX*/
+	left: 0; /*位置出错了XXXXX*/
 	top: 100%; /*位置*/
 	-webkit-transition: 1s all; /*设定同时过度效果才能淡入淡出*/
 	-moz-transition: 1s all;
@@ -136,7 +139,7 @@ nav.menu li:hover > ul {
 	opacity: 1;
 	visibility: visible; /*􏱺􏲩􏱧􏱨􏶏􏹥􏶐􏶑􏵹􏵺􏹙􏵻*/
 }
-.choice2 li:nth-child(2) a {
+nav.menu li li:nth-child(2) a {
 	float: none; /*不浮动啊对呀？*/
 	border-bottom-left-radius: 0px;
 }
@@ -159,6 +162,11 @@ nav.menu li li:last-child a {
 .no-csstransitions nav.menu li:hover > ul {
 	display: block; /*悬停显示*/
 }
+
+
+/*  tiiiiiiiiiiiiiiiiiiiiiiiii*/
+
+
 section#feature_area {
 	overflow: hidden; /*包围浮动自元素*/
 	margin: 16px 0 0; /*页与专题区流出空隙*/
