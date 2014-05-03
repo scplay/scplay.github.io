@@ -8,54 +8,57 @@
 * {
 	margin: 0 0;
 }
+.footer {
+	text-align: center;
+}
 /*这个方法貌似很不错呢*/
 .header {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	-webkit-transform: translate(-50%,-80%);
-	-moz-transform: translate(-50%,-80%);
-	-ms-transform: translate(-50%,-80%);
-	-o-transform: translate(-50%,-80%);
-	transform: translate(-50%,-80%);
+	-webkit-transform: translate(-50%, -90%);
+	-moz-transform: translate(-50%, -90%);
+	-ms-transform: translate(-50%, -90%);
+	-o-transform: translate(-50%, -90%);
+	transform: translate(-50%, -90%);
 }
 .header h1, h2 {
 	font-family: 'Cabin Sketch', cursive, sans-serif;
 	font-size: 5em;
-	color: #222;
+	color: #000;
 }
-
 .header h2 {
 	font-size: 1.5em;
 }
-.header a {
+.header h2 a {
 	display: inline-block;
 	text-decoration: none;
-	color: #fff;
+	color: #222;
 	opacity: 0;
 	-webkit-transition: 1s all; /*设定同时过度效果才能淡入淡出*/
 	-moz-transition: 1s all;
 	transition: 1s all;
 }
 .header a:hover {
-	color: #000;
+	color: #222;
 	opacity: 1;
 }
 footer {
-	
-	position:absolute;
+	position: absolute;
 	font-family: 'Cabin Sketch', cursive, sans-serif;
 	font-size: 1em;
 	color: #bbb;
-	top: 98%;
+	top: 96%;
 	left: 50%;
-	-webkit-transform: translate(-50%,-50%);
-	-moz-transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	-o-transform: translate(-50%,-50%);
-	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
-footer p{display:inline-block;}
+footer p {
+	display: inline-block;
+}
 footer span {
 	color: #15EADF;
 }
@@ -65,10 +68,12 @@ footer span {
 <body>
 <div class="header">
   <h1>&lt;xEOn'Hcj&gt;</h1>
-  <h2>&lt;!--<span>你来或者不来 王工就在<a href="index_basis.html" >这里</a></span>--&gt;</h2>
+  <h2>&lt;!--<span>你来或者不来 王工就在<a href="index_basis.html" >这里</a>--&gt;</h2>
 </div>
-<footer>
-  <p>&reg;copyright reserved by <span>XeON</span> SCUT School Of Design</p>
-</footer>
+<div class="footer">
+  <footer>
+    <p>&reg;copyright reserved by <span>XeON</span> SCUT School Of Design</p>
+  </footer>
+</div>
 </body>
 </html>
