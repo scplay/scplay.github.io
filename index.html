@@ -8,23 +8,36 @@
 * {
 	margin: 0 0;
 }
-
-.header h1,h2 {
-font-family: 'Cabin Sketch', cursive, sans-serif;
-font-weight:bold;font-color:#999;
+.header h1, h2 {
+	font-family: 'Cabin Sketch', cursive, sans-serif;
+	font-size: 2.5em;
+	font-color: #999;
 }
 body {
 	text-align: center;
 }
-
-.header a {	text-decoration:none;color: #444;}
+.header h2 {
+	font-size: 1.5em;
+}
+.header a {
+	text-decoration: none;
+	color: #fff;
+	opacity: 0;
+	-webkit-transition: 1s all; /*设定同时过度效果才能淡入淡出*/
+	-moz-transition: 1s all;
+	transition: 1s all;
+}
+.header a:hover {
+	color: #000;
+	opacity: 1;
+}
 </style>
 </head>
 
 <body>
 <div class="header">
   <h1>&lt;xEOn'Hcj&gt;</h1>
-  <h2>&lt;!--你来或者不来 王工就在<a href="index_basis.html" title="vOv">这里</a>--&gt;</h2>
+  <h2>&lt;!--<span>你来或者不来 王工就在<a href="index_basis.html" >这里</a></span>--&gt;</h2>
 </div>
 </body>
 </html>
