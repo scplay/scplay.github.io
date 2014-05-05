@@ -58,9 +58,30 @@ footer {
 }
 footer p {
 	display: inline-block;
+	min-width:370px;
 }
 footer span {
 	color: #15EADF;
+}
+footer p::after { /**/
+	content: ""; /**/
+	position: absolute; /**/
+	border: 6px  solid;
+	border-color:  transparent   transparent #999  #999 ;
+	right: -4%;
+	top: 40%; /**/
+	height: 0px;
+	width: 0px; /**/
+}
+footer p::before { /**/
+	content: ""; /**/
+	position: absolute; /**/
+	border: 1px  solid;
+	border-color:  #aaa  #aaa  #aaa #aaa;
+	left: 0%;
+	top: 108%; /**/
+	height: 0px;
+	width: 382px; /**/
 }
 </style>
 </head>
@@ -70,10 +91,10 @@ footer span {
   <h1>&lt;xEOn'Hcj&gt;</h1>
   <h2>&lt;!--<span>你来或者不来 王工就在<a href="index_basis.html" >这里</a>--&gt;</h2>
 </div>
-<div class="footer">
+
   <footer>
     <p>&reg;copyright reserved by <span>XeON</span> SCUT School Of Design</p>
   </footer>
-</div>
+
 </body>
 </html>
