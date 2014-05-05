@@ -10,6 +10,7 @@
 }
 body {
 	font: 1.0em helvetica, arial, sans-serif;
+	background-color:#eee;
 }
 /*1.0em 为了声明 字体大小方便以后修改*/
 article {
@@ -58,10 +59,13 @@ code {
 }
 a {
 	display: block;
-	background-color: #FFF;
+	background-color: #eee;
 	color: #333;
 	text-decoration: none;
 	-webkit-transition: all .8s cubic-bezier(0, .92, .43, .99) 0s;
+	-moz-transition: all .8s cubic-bezier(0, .92, .43, .99) 0s;
+	-ms-transition: all .8s cubic-bezier(0, .92, .43, .99) 0s;
+	transition: all .8s cubic-bezier(0, .92, .43, .99) 0s;
 }
 
 a:hover {
