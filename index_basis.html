@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
+<link href='http://www.youziku.com/webfont/CSS/e7eeed2c07f6bdeabe145b495b8fa129' rel='stylesheet' type='text/css'/>
 <title>Xeon的练功房</title>
 <style>
 * {
@@ -183,12 +184,12 @@ code {
 <body>
 <header>
   <h1>Xeon's Work Shop</h1>
-  <p>W3C作业本</p>
+  <p>W3C<span>作业本</span></p>
 </header>  
 <article>
   <div id="css">
   <h2>CSS</h2>
-    <ol>
+    <ol class="minijianheiti" style="font-size: 15px">
       <li><a href="hcjpractice/biowang.html">Bio.Xeon</a></li>
       <li><a href="hcjpractice/traditype.html">笔记本样式排版</a></li>
       <li><a href="hcjpractice/thotb.html">巴斯克韦尔庄园的猎犬</a></li>
@@ -219,4 +220,33 @@ code {
 </div>
 </article>
 </body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.youziku.com/UserDownFile/jquery.md5.js"></script>
+    <script type="text/javascript"> 
+        function youziku19524() {
+            var resultStr = $(".minijianheiti").text();
+            var md5 = "";
+            resultStr = Trim(resultStr);
+            resultStr = SelectWord(resultStr);
+            md5 = $.md5("e563b75693684f2b90ce727f1d7fa40d"+"minijianheiti" + resultStr);
+            $.getJSON("http://www.youziku.com/webfont/CSSPOST?jsoncallback=?", { "id": md5, "guid": "e563b75693684f2b90ce727f1d7fa40d", "type": "5" }, function (json) {
+                if (json.result == 0) {//alert("需要生成");
+                    $.post("http://www.youziku.com/webfont/PostCorsCreateFont", { "name": "minijianheiti", "gid": "e563b75693684f2b90ce727f1d7fa40d", "type": "5", "text": resultStr }, function (json) {
+                        if (json == "0") { //alert("参数不对");//传递的参数不对，请检查name,guid,type是否正确
+                        } else if (json == "2") {//alert("超过每日生成字体数的上限");
+                        } else if (json == "3") { //alert("当前正在生成请稍后");
+                        } else {//alert("正在生成");//第一次调用需要生成webfont文件，文件生成一般只需几秒，安全起见请您在30s后刷新页面
+                        }
+                    });
+                }
+                else {//alert("下载css文件");
+                    loadExtentFile("http://www.youziku.com/webfont/css?id=" + md5 + "&guid=" + "e563b75693684f2b90ce727f1d7fa40d" + "&type=5");
+                }
+            });
+        }
+        (function youziku() {
+            youziku19524();
+        })()
+    </script>
+
 </html>
