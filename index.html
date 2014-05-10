@@ -24,7 +24,7 @@
 	transform: translate(-50%, -90%);
 }
 .header h1, h2 {
-	font-family: 'Cabin Sketch', cursive, sans-serif;
+	font-family: 'Cabin+Sketch', cursive, sans-serif;
 	font-size: 5em;
 	color: #000;
 }
@@ -109,8 +109,23 @@ footer p::before {
 </div>
 
   <footer>
+  
     <p>&reg;copyright reserved by <span>XeON</span> SCUT School Of Design</p>
+    
   </footer>
 
 </body>
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Cabin+Sketch:400,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
 </html>
