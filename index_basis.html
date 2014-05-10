@@ -53,6 +53,13 @@ header {
 	padding: 10px 10px 0 5px  ;
 	border: 2px solid SlateBlue ;
 }
+
+#tr {
+	width: 500px;
+	margin: 20px auto;
+	padding: 10px 10px 0 5px  ;
+	border: 2px solid #FF9 ;
+}
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.15em;
 	margin-bottom: .1em;
@@ -116,6 +123,22 @@ h1 {
 	-webkit-transform: translate(280%, -24%);
 	transform-origin:top left;
 	transform: translate(280%, -24%);
+	
+}
+
+#tr h2 {
+	position:absolute;
+	z-index:2;
+	margin:0;
+	padding:0;
+	font-size: 1.6em;
+	line-height:1.6em;
+	color:#FF9;
+	text-shadow: 2px 2px 3px #aaa;
+	-webkit-transform-origin:top left;
+	-webkit-transform: translate(840%, -24%);
+	transform-origin:top left;
+	transform: translate(590%, -24%);
 	
 }
 
@@ -186,6 +209,23 @@ code {
 }
 .header span{color:#333;}
 
+#tr a {
+	position:relative;
+	display: block;
+	background-color: #eee;
+	color: #333;
+	text-decoration: none;
+	-webkit-transition: all .8s cubic-bezier(0, .92, .43, .99) 0s;
+	-moz-transition: all .8s cubic-bezier(0, .92, .43, .99) 0s;
+	-ms-transition: all .8s cubic-bezier(0, .92, .43, .99) 0s;
+	transition: all .8s cubic-bezier(0, .92, .43, .99) 0s;
+}
+#tr a:hover {
+	background-color: #C90;
+	color: #fff;
+}
+.header span{color:#333;}
+
 </style>
 </head>
 
@@ -224,6 +264,12 @@ code {
   <h2>JavaScript </h2>
   <ol class="minijianheiti">
     <li><a href="#">Javascript</a></li>
+  </ol>
+</div>
+<div id="tr">
+  <h2>Tuts </h2>
+  <ol class="minijianheiti">
+    <li><a href="airole.html">Ai在网页设计流程中的角色</a></li>
   </ol>
 </div>
 </article>
